@@ -5,7 +5,8 @@
   function chkQuerySet() {
     var e,
       n = window[QUERY_KEY];
-    return isNaN(n) ? ((e = location.href.split(QUERY_KEY + "=")[1]),
+    return isNaN(n)
+      ? ((e = location.href.split(QUERY_KEY + "=")[1]),
         (n = parseFloat(e)),
         void (isNaN(n) || (GREY_RATIO = n)))
       : void (GREY_RATIO = n);
